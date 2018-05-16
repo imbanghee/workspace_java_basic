@@ -1,0 +1,19 @@
+package javabasic.ClassLoader;
+
+import java.lang.reflect.InvocationTargetException;
+
+public class ClassForNameTest {
+
+	public static void main(String[] args) throws Exception {
+		try {
+			Class<?> clazz = Class.forName("InterfaceTest");
+			
+			String params = null;
+			clazz.getMethod("main", String[].class).invoke(null, (Object)params);
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

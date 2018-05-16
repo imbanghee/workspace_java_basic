@@ -1,0 +1,15 @@
+package javabasic.ClassLoader;
+
+public class ClassForNameTest {
+
+	public static void main(String[] args) {
+		try {
+			Class<?> clazz = Class.forName("InterfaceTest");
+			clazz.getMethod("main", String[].class).invoke(null, (Object)params);
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

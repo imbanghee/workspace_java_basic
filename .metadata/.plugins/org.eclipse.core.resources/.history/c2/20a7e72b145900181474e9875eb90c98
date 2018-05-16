@@ -1,0 +1,14 @@
+package javabasic.Thread;
+
+public class ThreadSample2 implements Runnable{
+
+	public static void main(String[] args) {
+		ThreadSample2 thread2 = new ThreadSample2();
+		thread2.start();
+	}
+
+	public void run() {
+		
+	}
+
+}

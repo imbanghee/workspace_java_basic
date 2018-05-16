@@ -1,0 +1,10 @@
+package javabasic.Thread;
+
+public class ThreadSample3 {
+
+	public static void main(String[] args) {
+		Thread thread3 = new Thread(new RunnableSample());
+		thread3.start();
+	}
+
+}
