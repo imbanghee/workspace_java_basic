@@ -1,0 +1,24 @@
+package javabasic.Exception;
+
+public class ExceptionBasicTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("main Method START");
+		
+		/*try {
+			int a = 1/0;
+		} catch (Exception e) {
+			System.out.println("Catch Exception");
+		}*/
+		try {
+			int a = 1/0;
+		} catch (Exception e) {
+			System.out.println("Catch Exception");
+		} finally {
+			System.out.println("Finally");
+		}
+		System.out.println("main Method END");
+	}
+
+}
